@@ -1,0 +1,56 @@
+<%= form_for @permit, url: wizard_path do |f| %>
+  <h2>Enter Details</h2>
+  <div class="field">
+    <%= f.label :owner_name %><br />
+    <%= f.text_field :owner_name %><br />
+
+    <%= f.label :house_area %><br />
+    <%= f.text_field :house_area %><br />
+
+    <%= f.label :addition_area %><br />
+    <%= f.text_field :addition_area %><br />
+
+    <%= f.label :ac %><br />
+    <%= f.text_field :ac %><br />
+
+    <%= f.label :contractor_name %><br />
+    <%= f.text_field :contractor_name %><br />
+
+    <%= f.label :contractor_id %><br />
+    <%= f.text_field :contractor_id %><br />
+
+    <%= f.label :escrow %><br />
+    <%= f.text_field :escrow %><br />
+
+    <%= f.label :license_holder %><br />
+    <%= f.text_field :license_holder %><br />
+
+    <%= f.label :license_num %><br />
+    <%= f.text_field :license_num %><br />
+
+    <%= f.label :agent_name %><br />
+    <%= f.text_field :agent_name %><br />
+
+    <%= f.label :contact_id %><br />
+    <%= f.text_field :contact_id %><br />
+
+    <%= f.label :other_contact_id %><br />
+    <%= f.text_field :other_contact_id %><br />
+
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %><br />
+
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %><br />
+
+    <%= f.label :email %><br />
+    <%= f.text_field :email %><br />
+
+    <%= f.label :work_summary %><br />
+    <%= f.text_field :work_summary %><br />
+  </div>
+  <div class="actions">
+    <%= f.submit "Continue" %>
+    or <%= link_to "skip this step", next_wizard_path %>
+  </div>
+<% end %>
